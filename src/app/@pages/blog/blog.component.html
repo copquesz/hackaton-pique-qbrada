@@ -1,0 +1,42 @@
+<div class="page-wrapper">
+  <app-header></app-header>
+
+  <!-- News Section -->
+  <section class="news-section alternate">
+    <div class="auto-container">
+        <div class="row">
+
+            <!-- News Block Three -->
+            <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight" *ngFor="let item of this.post">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="blog-single.html"><img [src]="item.image" alt=""></a></figure>
+                    </div>
+                    <div class="lower-content">
+                        <ul class="post-info">
+                            <li><span class="far fa-user"></span> {{ item.author }}</li>
+                            <li><span class="far fa-comments"></span> Comentários: {{ item.comments }}</li>
+                        </ul>
+                        <h4><a href="blog-single.html">{{ item.title }}</a></h4>
+                        <div class="btn-box"><a  [routerLink]="item.id" class="read-more">Visualizar</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Styled Pagination-->
+        <ul class="styled-pagination text-center">
+            <li><a href="#"><span class="icon fa fa-angle-left"></span></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#"><span class="icon fa fa-angle-right"></span></a></li>
+        </ul>
+        <!--End Styled Pagination-->
+    </div>
+  </section>
+  <!--End News Section -->
+
+  <app-footer></app-footer>
+</div>

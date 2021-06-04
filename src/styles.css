@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+
+* {
+  margin:0px;
+  padding:0px;
+  border:none;
+  outline:none;
+}
+
+
+body {
+  font-size:14px;
+  color:#777777;
+  line-height:1.7em;
+  font-weight:400;
+  background:#ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+}
+
+/** CUSTOM COLORS **/
+
+.text-red{
+  color: #e6275a;
+}
+
+.text-purple{
+  color: #4c35a9;
+}
+
+.text-green{
+  color: #40cbb4;
+}
+
+.text-orange{
+  color: #e67e22;
+}
+
+.text-blue{
+  color: #3498db;
+}
+
+/** CUSTOM BACKGROUND **/
+.bg-red{
+  background-color: #e6275a;
+}
+
+.bg-purple{
+  background-color: #4c35a9;
+}
+
+.bg-green{
+  background-color: #40cbb4;
+}
+
+.bg-orange{
+  background-color: #e67e22;
+}
+.bg-blue{
+  background-color: #3498db;
+}
+
+.bg-pink{
+  background-color: #f04770;
+}

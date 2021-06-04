@@ -1,0 +1,175 @@
+<div class="page-wrapper">
+  <app-header></app-header>
+
+  <!--Sidebar Page Container-->
+  <div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!--Content Side / Blog Sidebar-->
+            <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                <div class="blog-single">
+                     <!-- News Block Three -->
+                    <div class="news-block">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img [src]="this.post.image" alt="" style="height: auto;"></figure>
+                            </div>
+                            <div class="lower-content">
+                                <ul class="post-info">
+                                    <li><span class="far fa-user"></span> {{ this.post.author }}</li>
+                                    <li><span class="far fa-comments"></span> Comentários: {{ this.post.comments }}</li>
+                                </ul>
+                                <h2>{{ this.post.title }}</h2>
+                                <p>{{ this.post.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Other Options -->
+                    <div class="post-share-options clearfix">
+                        <div class="pull-left">
+                            <ul class="tags">
+                                <li><a href="#">#ColaComNois</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="social-icon-three pull-right">
+                            <ul class="social-icon-three">
+                                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Comments Area -->
+                    <div class="comments-area">
+                        <div class="group-title">
+                            <h3>Comentários: 02</h3>
+                        </div>
+                        <div class="comment-box">
+                            <div class="comment">
+                                <div class="author-thumb"><img src="https://farinazzoarquitetura.com.br/wp-content/uploads/2021/05/account_circle_grey_192x192.png" alt=""></div>
+                                <div class="comment-info">
+                                    <div class="name">Lucas Copque</div>
+                                </div>
+                                <div class="text">Et magnis dis parturient montes nascetur ridiculus mus mauris. Quam pellentesque nec nam aliquam sem et tortor consequat id.</div>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="comment">
+                                <div class="author-thumb"><img src="https://farinazzoarquitetura.com.br/wp-content/uploads/2021/05/account_circle_grey_192x192.png" alt=""></div>
+                                <div class="comment-info">
+                                    <div class="name">Henry da Silva</div>
+                                </div>
+                                <div class="text">Mattis aliquam faucibus purus in massa tempor nec feugiat.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Comment Form-->
+                    <div class="comment-form">
+                        <div class="group-title">
+                            <h3>Compartilhe sua opnião:</h3>
+                        </div>
+                        <form method="post" action="blog.html">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                    <input type="text" name="username" placeholder="Nome" required="">
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                    <input type="email" name="email" placeholder="E-mail" required="">
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                    <textarea name="message" placeholder="Seu Comentário"></textarea>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Comentário</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sidebar Side-->
+            <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                <aside class="sidebar padding-left">
+
+                    <!-- Search -->
+                    <div class="sidebar-widget search-box">
+                        <form method="post" action="contact.html">
+                            <div class="form-group">
+                                <input type="search" name="search-field" value="" placeholder="Buscar ..." required>
+                                <button type="submit"><span class="icon fa fa-search"></span></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Category Widget -->
+                    <div class="sidebar-widget categories">
+                        <h4 class="sidebar-title">Categorias</h4>
+                        <div class="widget-content">
+                            <!-- Blog Category -->
+                            <ul class="blog-categories">
+                                <li><a href="#">Dança <span>03</span></a></li>
+                                <li><a href="#">Teatro <span>07</span></a></li>
+                                <li><a href="#">Música <span>06</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Post Widget -->
+                    <div class="sidebar-widget popular-posts">
+                        <h4 class="sidebar-title">Útimos Posts</h4>
+                        <div class="widget-content">
+
+                            <article class="post">
+                                <div class="post-inner">
+                                    <figure class="post-thumb"><a href="#"><img src="https://picsum.photos/id/41/370/200" alt=""></a></figure>
+                                    <div class="post-info">12 de Janeiro de 2021</div>
+                                    <div class="text"><a href="#">Lorem ipsum dolor sit amet.</a></div>
+                                </div>
+                            </article>
+
+                            <article class="post">
+                                <div class="post-inner">
+                                    <figure class="post-thumb"><a href="#"><img src="https://picsum.photos/id/74/370/200" alt=""></a></figure>
+                                    <div class="post-info">24 de Março de 2020</div>
+                                    <div class="text"><a href="#">Lorem ipsum dolor sit amet.</a></div>
+                                </div>
+                            </article>
+
+                            <article class="post">
+                                <div class="post-inner">
+                                    <figure class="post-thumb"><a href="#"><img src="https://picsum.photos/id/67/370/200" alt=""></a></figure>
+                                    <div class="post-info">07 de Março de 2020</div>
+                                    <div class="text"><a href="#">Lorem ipsum dolor sit amet.</a></div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget popular-tags">
+                        <h4 class="sidebar-title">Tags</h4>
+                        <div class="widget-content">
+                            <a href="#">#ColaComNois</a>
+                            <a href="#">#FavelaVive</a>
+                            <a href="#">#ArtePraVida</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- End Sidebar Page Container -->
+
+  <app-footer></app-footer>
+</div>
+

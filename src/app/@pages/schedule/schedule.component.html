@@ -1,0 +1,263 @@
+<div class="page-wrapper">
+  <app-header></app-header>
+
+  <!-- schedule Section -->
+  <section class="schedule-section">
+    <div class="anim-icons">
+        <span class="icon icon-circle-4 wow zoomIn"></span>
+        <span class="icon icon-circle-3 wow zoomIn"></span>
+    </div>
+
+    <div class="auto-container">
+        <div class="sec-title text-center">
+            <span class="title">Sobre o Evento</span>
+            <h2>Plano Cronológico</h2>
+        </div>
+
+        <div class="schedule-tabs tabs-box">
+            <div class="btns-box">
+                <!--Tabs Box-->
+                <ul class="tab-buttons clearfix">
+                    <li class="tab-btn" (click)="this.setTabs(1)" [ngClass]="{ 'active-btn': this.tabs == 1 }">
+                        <span class="day">Dia 01</span>
+                        <span class="date">07</span>
+                        <span class="month">Maio</span> 2023
+                    </li>
+
+                    <li class="tab-btn" (click)="this.setTabs(2)" [ngClass]="{ 'active-btn': this.tabs == 2 }">
+                        <span class="day">Dia 02</span>
+                        <span class="date">14</span>
+                        <span class="month">Maio</span> 2023
+                    </li>
+
+                    <li class="tab-btn" (click)="this.setTabs(3)" [ngClass]="{ 'active-btn': this.tabs == 3 }">
+                        <span class="day">Dia 03</span>
+                        <span class="date">21</span>
+                        <span class="month">Maio</span> 2023
+                    </li>
+
+                    <li class="tab-btn" (click)="this.setTabs(4)" [ngClass]="{ 'active-btn': this.tabs == 4 }">
+                        <span class="day">Dia 04</span>
+                        <span class="date">28</span>
+                        <span class="month">Maio</span> 2023
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tabs-content">
+
+                <!--Tab-->
+                <div class="tab" [ngClass]="{ 'active-tab': this.tabs == 1 }">
+                  <h2 class="schedule-date-title text-center my-5">Região Norte</h2>
+                  <div class="schedule-timeline">
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block">
+                        <div class="inner-box">
+                            <div class="inner">
+                                <div class="date">9.00 AM <br> 10.00 AM</div>
+                                <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block even">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block even">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--Tab-->
+                <div class="tab" [ngClass]="{ 'active-tab': this.tabs == 2 }">
+                  <h2 class="schedule-date-title text-center my-5">Região Oeste</h2>
+                  <div class="schedule-timeline">
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block">
+                        <div class="inner-box">
+                            <div class="inner">
+                                <div class="date">9.00 AM <br> 10.00 AM</div>
+                                <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block even">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block even">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--Tab-->
+                <div class="tab" [ngClass]="{ 'active-tab': this.tabs == 3 }">
+                  <h2 class="schedule-date-title text-center my-5">Região Central</h2>
+                  <div class="schedule-timeline">
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block">
+                        <div class="inner-box">
+                            <div class="inner">
+                                <div class="date">9.00 AM <br> 10.00 AM</div>
+                                <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block even">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block even">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--Tab-->
+                <div class="tab" [ngClass]="{ 'active-tab': this.tabs == 4 }">
+                  <h2 class="schedule-date-title text-center my-5">Região Leste<br><small class="schedule-date-subtitle">Dia Mundial da Cultura</small></h2>
+                  <div class="schedule-timeline">
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block">
+                        <div class="inner-box">
+                            <div class="inner">
+                                <div class="date">9.00 AM <br> 10.00 AM</div>
+                                <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block even">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- schedule Block -->
+                    <div class="schedule-block even">
+                      <div class="inner-box">
+                          <div class="inner">
+                              <div class="date">9.00 AM <br> 10.00 AM</div>
+                              <h4><a href="event-detail.html">Lorem Ipsum</a></h4>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--End schedule Section -->
+
+  <app-footer></app-footer>
+</div>

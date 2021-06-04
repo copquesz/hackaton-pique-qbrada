@@ -1,0 +1,9 @@
+@import url('../../../assets/css/bootstrap.css');
+@import url('../../../assets/css/style.css');
+@import url('../../../assets/css/responsive.css');
+@import url('../../../assets/css/color-switcher-design.css');
+
+.features-section{
+  padding-top: 0;
+  margin-top: 0;
+}

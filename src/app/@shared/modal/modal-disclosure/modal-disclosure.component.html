@@ -1,0 +1,72 @@
+
+<div class="modal-content">
+  <div class="modal-header border">
+      <h4 class="modal-title font-weight-bold">Dilvugar Trampo</h4>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="this.form" class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="first-name-column">Nome de Apresentação: <span class="text-danger">*</span> </label>
+            <input type="text" class="form-control" formControlName="name" placeholder="Seu nome de apresentação ou do grupo" [(ngModel)]="disclosure.name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+              <div *ngIf="f.name.errors.required">Nome de apresentação obrigatório</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="first-name-column">E-mail: <span class="text-danger">*</span> </label>
+            <input type="email" class="form-control" formControlName="email" placeholder="E-mail do responsável" [(ngModel)]="disclosure.email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">E-mail obrigatório</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="first-name-column">URL Imagem: </label>
+            <input type="text" class="form-control" formControlName="imageUrl" placeholder="http://www.dominio.com.br/meu-logo.png" [(ngModel)]="disclosure.imageUrl">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="first-name-column">URL Instagram: </label>
+            <input type="text" class="form-control" formControlName="instagram" placeholder="http://www.instagram.com.br/@meu-projeto" [(ngModel)]="disclosure.instagram">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="first-name-column">URL Facebook: </label>
+            <input type="text" class="form-control" formControlName="facebook" placeholder="http://www.facebook.com.br/@meu-projeto" [(ngModel)]="disclosure.facebook">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="first-name-column">Sobre: <span class="text-danger">*</span> </label>
+            <textarea class="form-control" rows="5" formControlName="about" placeholder="Descreva sobre seu projeto ..." [(ngModel)]="disclosure.about" [ngClass]="{ 'is-invalid': submitted && f.about.errors }"></textarea>
+            <div *ngIf="submitted && f.about.errors" class="invalid-feedback">
+              <div *ngIf="f.about.errors.required">Descreva sobre o seu trabalho</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer border">
+    <button type="submit" class="btn btn-success" (click)="this.onSubmit()">Enviar</button>
+    <button type="button" class="btn btn-danger" (click)="onClose()">Fechar</button>
+  </div>
+</div><!-- /.modal-content -->
+

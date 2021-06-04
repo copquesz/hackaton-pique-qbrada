@@ -1,0 +1,21 @@
+@import url('../../../assets/css/bootstrap.css');
+@import url('../../../assets/css/style.css');
+@import url('../../../assets/css/responsive.css');
+@import url('../../../assets/css/color-switcher-design.css');
+
+
+.schedule-date-title{
+  position: relative;
+  line-height: 1.2em;
+  color: #1e1f36;
+  font-weight: 700;
+  text-align: center;
+}
+
+.schedule-date-subtitle{
+  position: relative;
+  line-height: 1.2em;
+  color: #95afc0;
+  font-weight: 700;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+
+<div class="modal-content">
+  <div class="modal-header border">
+      <h4 class="modal-title font-weight-bold">Contato</h4>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label for="first-name-column">E-mail: </label>
+          <input type="email" class="form-control" placeholder="Não Informado" [value]="this.email" readonly>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer border">
+    <button type="button" class="btn btn-danger" (click)="onClose()">Fechar</button>
+  </div>
+</div><!-- /.modal-content -->
+
