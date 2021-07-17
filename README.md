@@ -1,27 +1,39 @@
 # PiqueQbrada
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+Projeto desenvolvido para um hackaton realizado pela Abracorp em parceria com a Universidade São Judas Tadeu utilizando HTML, CSS e Angular 11.2.3.
 
-## Development server
+## Ilustrações
+| Home | Sobre | Calendário | Blog | Blog Detalhe |
+ | --- | --- | --- | --- | --- |
+ | ![Home](/src/assets/images/build/1.png) | ![Sobre](/src/assets/images/build/2.png) | ![Calendário](/src/assets/images/build/3.png) | ![Blog](/src/assets/images/build/4.png) | ![Blog Detalhe](/src/assets/images/build/5.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Rodando Localmente
+Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem. 
 
-## Code scaffolding
+Execute `ng generate component-name` para gerar um novo componente. Você também pode usar `ng generate Directive | pipe | service | class | guard | interface | enum | module`. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Estrutura
+Utilizado design pattern Core, Shared, Features;
+- `src\app\@core`: Módulo de modelos e serviços para fake back-end;
+- `src\app\@pages`: Componente que buildam a view;
+- `src\app\@shared`: Componentes e funcionalidades compartilhadas;
+- `src\assets`: Arquivos estáticos como fontes, imagens, bibliotecas de terceiros;
+- `package.json`: Gerenciador de Dependências;
+- `tsconfig.json`: Configuração de Typescript;
+- `angular.json`: Configuração Angular Frameworks;
+- `tslint.json`: Configuração de Rules e Style Guide.
+
+## Rotas
+- `/home`
+- `/sobre`
+- `calendario`
+- `blog`
+- `divulgacoes`
 
 ## Build
+Execute `ng build` para construir o projeto. Os artefatos de construção serão armazenados no diretório `dist/`. Use o sinalizador `--prod` para uma construção de produção. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Documentação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira a página [Angular CLI](https://angular.io/cli). 
