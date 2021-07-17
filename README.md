@@ -26,9 +26,9 @@ Utilizado design pattern Core, Shared, Features;
 ## Rotas
 - `/home`
 - `/sobre`
-- `calendario`
-- `blog`
-- `divulgacoes`
+- `/calendario`
+- `/blog`
+- `/divulgacoes`
 
 ## Build
 Execute `ng build` para construir o projeto. Os artefatos de construção serão armazenados no diretório `dist/`. Use o sinalizador `--prod` para uma construção de produção. 
